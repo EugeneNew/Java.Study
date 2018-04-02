@@ -2,6 +2,7 @@ package linkedList;
 
 import java.util.*;
 
+// 02.04.2018 LinkedList
 
 public class LinkedListTest{
     public static void main(String[] args){
