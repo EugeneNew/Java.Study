@@ -19,8 +19,34 @@ public class LinkedListTest{
         b.add("Frances");
         b.add("Gloria");
 
+        System.out.println("Start");
         System.out.println(a);
         System.out.println(b);
+
+        ListIterator<String> aIter = a.listIterator();
+        Iterator<String> bIter = b.iterator();
+
+        while (bIter.hasNext()){
+            if (aIter.hasNext()) aIter.next();
+            aIter.add(bIter.next());
+        }
+        System.out.println("Объединили коллекции:" + a);
+
+        bIter = b.iterator();
+        while (bIter.hasNext()){
+            bIter.next();
+            if (bIter.hasNext()){
+                bIter.next();
+                bIter.remove();
+            }
+        }
+        System.out.println("Удалили каджое второе слово из коллекции b:"+b);
+
+        a.removeAll(b);
+        System.out.println("Удалили из а коллекцию b ");
+
+        System.out.println("a: "+a);
+        System.out.println("b: "+b);
 
     }
 
