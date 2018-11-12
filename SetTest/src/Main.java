@@ -8,6 +8,7 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+
         Set<String> words = new HashSet<>();
 // объект типа HashSet, реализующий хеш-множество
         long totalTime = 0;
