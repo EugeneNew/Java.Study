@@ -17,6 +17,7 @@ public class buildCollectionClass {
     }
 
     public buildCollectionClass(Integer amountElements) {
+
         amountCollectionElements = amountElements;
     }
 
